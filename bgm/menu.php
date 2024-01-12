@@ -1,35 +1,36 @@
 <?php require 'db-connect.php'; ?>
-<?php require 'header.php'; ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
     <meta charset="UTF-8">
-    <title>kadai6-3-1
+    <title>最終課題
     </title>
 
 </head>
 
 <body>
+    <h1>BGM一覧</h1>
+    <a href="insert.php?id=',$row['id'],'">登録</a>;
     <table>
         <tr>
-            <th>商品ID</th>
-            <th>商品名</th>
-            <th>商品分類</th>
-            <th>販売単価</th>
-            <th>仕入単価</th>
-            <th>登録日</th>
+            <th>BGMID</th>
+            <th>BGM名</th>
+            <th>作曲者</th>
+
         </tr>
         <?php
-        $pdo=new PDO('mysql:host=mysql213.phy.lolipop.lan;dbname=LAA1517370-sample;charaset=utf8',username:'LAA1517370',password:'Pass0827');
-        foreach($pdo->query('select * from Shohin')as $row){
+        $pdo=new PDO('mysql:host=mysql220.phy.lolipop.lan;dbname=LAA1517370-final;charaset=utf8',username:'LAA1517370',password:'Pass0827');
+        foreach($pdo->query('select * from BGMs')as $row){
             echo '<tr>';
-            echo '<td>',$row['shohin_id'],'</td>';
-            echo '<td>',$row['shohin_mei'],'</td>';
-            echo '<td>',$row['shohin_bunrui'],'</td>';
-            echo '<td>',$row['hanbai_tanka'],'</td>';
-            echo '<td>',$row['shiire_tanka'],'</td>';
-            echo '<td>',$row['torokubi'],'</td>';
+            
+          
+            echo '<td>',$row['bgm_id'],'</td>';
+            echo '<td>',$row['bgm_name'],'</td>';
+            echo '<td>',$row['sakusha'],'</td>';
+            echo '<a href="insert.php?id=',$row['bgm_id'],'">更新</a>';
+            echo '<a href="delete.php?id=',$row['bgm_id'],'">削除</a>';
             echo '</tr>';
             echo "\n";
         }
