@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>練習6-5-input</title>
+    <title>insert-final</title>
 </head>
 
 <body>
