@@ -12,10 +12,10 @@
     <button onclick="location.href='menu.php'">トップへ戻る</button>
     <?php
     $pdo=new PDO($connect,USER,PASS);
-    $sql=$pdo->prepare('insert into BGMs(bgm_name,sakusha) values(?,?)');
+    $sql=$pdo->prepare('delete  from BGMs where id=? ');
  
-    $sql->execute([$_POST['name'],$_POST['sakusha']])
-        echo '<font color="red">追加に成功しました。</font>';
+    $sql->execute([$_GET['id']])
+        echo '<font color="red">削除に成功しました。</font>';
 
    
     ?>
@@ -37,8 +37,8 @@
     }
     ?>
     </table>
-    <form action="insert-input.php" method="post">
-        <button type="submit">追加画面へ戻る</button>
+    <form action="delete-input.php" method="post">
+        <button type="submit">削除画面へ戻る</button>
     </form>
 
 
