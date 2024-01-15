@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>練習6-5-output</title>
+    <title>delete-final</title>
 
 </head>
 
@@ -37,8 +37,8 @@
     }
     ?>
     </table>
-    <form action="delete-input.php" method="post">
-        <button type="submit">削除画面へ戻る</button>
+    <form action="menu.php" method="post">
+        <button type="submit">メニュー画面へ戻る</button>
     </form>
 
 
