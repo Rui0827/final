@@ -12,9 +12,9 @@
     <button onclick="location.href='menu.php'">トップへ戻る</button>
     <?php
     $pdo=new PDO($connect,USER,PASS);
-    $sql=$pdo->prepare('delete  from BGMs where id=? ');
+    $sql=$pdo->prepare('delete  from BGMs where bgm_id=? ');
  
-    $sql->execute([$_GET['id']])
+    $sql->execute([$_GET['bgm_id']])
         echo '<font color="red">削除に成功しました。</font>';
 
    

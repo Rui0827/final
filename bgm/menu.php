@@ -12,7 +12,7 @@
 
 <body>
     <h1>BGM一覧</h1>
-    <a href="insert-input.php?id=',$row['id'],'">登録</a>;
+    <a href="insert-input.php?id=',$row['id'],'">登録</a>
     <table>
         <tr>
             <th>BGMID</th>
