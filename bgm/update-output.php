@@ -12,7 +12,7 @@
     <?php
     $pdo=new PDO($connect, USER, PASS);
     // SQL発行準備 prepareメソッド　作成２
-    $sql=$pdo->prepare('update BGMs set bgm_name=?,sakusha_name=?');
+    $sql=$pdo->prepare('update BGMs set bgm_name=?,sakusha_name=? where bgm_id=?');
     if (empty($_POST['bgm_name'])) {
         echo 'BGM名を入力してください。';
     } else
@@ -22,7 +22,7 @@
     //SQLを発行 excuteメソッド　作成３
     //更新に成功しました　作成４
     //更新に失敗しまし　作成５
-    if($sql->execute([htmlspecialchars($_POST['bgm_name']),$_POST['sakusha_name']])){
+    if($sql->execute([htmlspecialchars($_POST['bgm_name']),$_POST['sakusha_name'],$_POST['bgm_id']])){
         echo '更新に成功しました。';
     }else{
         echo '更新に失敗しました。';
