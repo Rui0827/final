@@ -12,7 +12,7 @@
     <?php
     $pdo=new PDO($connect, USER, PASS);
     // SQL発行準備 prepareメソッド　作成２
-    $sql=$pdo->prepare('update BGMs set bgm_name=?,sakusha=? where bgm_id=?');
+    $sql=$pdo->prepare('update BGMs set bgm_name=?,sakusha_name=? where bgm_id=?');
     if (empty($_POST['bgm_name'])) {
         echo 'BGM名を入力してください。';
     } else
