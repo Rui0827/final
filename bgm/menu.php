@@ -5,6 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css">
     <title>最終課題
     </title>
 
