@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <button onclick="location.href='menu.php'">トップへ戻る</button>
+
     <?php
     $pdo=new PDO($connect, USER, PASS);
     // SQL発行準備 prepareメソッド　作成２
