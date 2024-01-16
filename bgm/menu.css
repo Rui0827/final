@@ -46,7 +46,7 @@ a.update {
     text-align: center;
     background-color: #4caf50;
     border: none;
-    color: #fff;
+    color: #22ea36;
     border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
@@ -65,7 +65,7 @@ a.delete {
     text-align: center;
     background-color: #e74c3c;
     border: none;
-    color: #fff;
+    color: #e62424;
     border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
@@ -84,7 +84,7 @@ a.insert {
     text-align: center;
     background-color: #3498db;
     border: none;
-    color: #fff;
+    color: #3e97cf;
     border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
