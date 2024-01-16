@@ -22,7 +22,7 @@
     //SQLを発行 excuteメソッド　作成３
     //更新に成功しました　作成４
     //更新に失敗しまし　作成５
-    if($sql->execute([htmlspecialchars($_POST['bgm_name']),$_POST['sakusha_name'],$_POST['id']])){
+    if($sql->execute([htmlspecialchars($_POST['bgm_name']),$_POST['sakusha_name'],$_POST['bgm_id']])){
         echo '更新に成功しました。';
     }else{
         echo '更新に失敗しました。';

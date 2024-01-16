@@ -16,8 +16,8 @@
         </tr>
         <?php
     $pdo=new PDO($connect, USER, PASS);
-	$sql=$pdo->prepare('select * from BGMs where id=?');
-	$sql->execute([$_POST['id']]);
+	$sql=$pdo->prepare('select * from BGMs where bgm_id=?');
+	$sql->execute([$_POST['bgm_id']]);
 
 
 	foreach ($sql as $row) {
