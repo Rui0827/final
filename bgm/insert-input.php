@@ -14,6 +14,9 @@
 
         <button type="submit">追加</button>
     </form>
+    <form action="menu.php" method="post">
+        <button type="submit">ホーム画面へ戻る</button>
+    </form>
 </body>
 
 </html>
