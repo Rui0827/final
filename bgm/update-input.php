@@ -10,9 +10,9 @@
 <body>
     <table>
         <tr>
-            <th>商品番号</th>
-            <th>商品名</th>
-            <th>商品価格</th>
+            <th>BGM名</th>
+            <th>作曲者</th>
+
         </tr>
         <?php
     $pdo=new PDO($connect, USER, PASS);
