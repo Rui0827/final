@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="insert-output.css">
     <title>練習6-5-output</title>
 
 </head>
