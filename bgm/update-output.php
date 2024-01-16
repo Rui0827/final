@@ -48,7 +48,7 @@ foreach ($pdo->query('select * from BGMs') as $row) {
 }
 ?>
     </table>
-    <button onclick="location.href='update-input.php'">更新画面へ戻る</button>
+    <button onclick="location.href='menu.php'">ホーム画面へ戻る</button>
 </body>
 
 </html>
