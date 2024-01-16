@@ -14,7 +14,7 @@
     $pdo=new PDO($connect,USER,PASS);
     $sql=$pdo->prepare('insert into BGMs(bgm_name,sakusha_name) values(?,?)');
  
-    $sql->execute([$_POST['bgm_name'],$_POST['sakusha_name']])
+    $sql->execute([$_POST['bgm_name'],$_POST['sakusha_name']]);
         echo '<font color="red">追加に成功しました。</font>';
 
    
