@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="insert-input.css">
     <title>insert-final</title>
 </head>
 
