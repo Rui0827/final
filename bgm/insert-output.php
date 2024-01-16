@@ -12,9 +12,9 @@
     <button onclick="location.href='menu.php'">トップへ戻る</button>
     <?php
     $pdo=new PDO($connect,USER,PASS);
-    $sql=$pdo->prepare('insert into BGMs(bgm_name,sakusha) values(?,?)');
+    $sql=$pdo->prepare('insert into BGMs(bgm_name,sakusha_name) values(?,?)');
  
-    $sql->execute([$_POST['name'],$_POST['sakusha']])
+    $sql->execute([$_POST['bgm_name'],$_POST['sakusha_name']])
         echo '<font color="red">追加に成功しました。</font>';
 
    
@@ -31,7 +31,7 @@
         echo '<tr>';
         echo '<td>',$row['bgm_id'],'</td>';
         echo '<td>',$row['bgm_name'],'</td>';
-        echo '<td>',$row['sakusha'],'</td>';
+        echo '<td>',$row['sakusha_name'],'</td>';
         echo '</tr>';
         echo "\n";
     }

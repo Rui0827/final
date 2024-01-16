@@ -28,7 +28,7 @@
           
             echo '<td>',$row['bgm_id'],'</td>';
             echo '<td>',$row['bgm_name'],'</td>';
-            echo '<td>',$row['sakusha'],'</td>';
+            echo '<td>',$row['sakusha_name'],'</td>';
             echo '<a href="update-input.php?id=',$row['bgm_id'],'">更新</a>';
             echo '<a href="delete.php?id=',$row['bgm_id'],'">削除</a>';
             echo '</tr>';

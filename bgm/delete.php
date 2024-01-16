@@ -31,7 +31,7 @@
         echo '<tr>';
         echo '<td>',$row['bgm_id'],'</td>';
         echo '<td>',$row['bgm_name'],'</td>';
-        echo '<td>',$row['sakusha'],'</td>';
+        echo '<td>',$row['sakusha_name'],'</td>';
         echo '</tr>';
         echo "\n";
     }
