@@ -4,6 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="update-input.css">
+
     <title>update-final</title>
 </head>
 
