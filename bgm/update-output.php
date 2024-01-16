@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="update-output.css">
     <title>update-output</title>
 </head>
 
