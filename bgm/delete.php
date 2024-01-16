@@ -14,7 +14,7 @@
     $pdo=new PDO($connect,USER,PASS);
     $sql=$pdo->prepare('delete  from BGMs where bgm_id=? ');
  
-    $sql->execute([$_GET['bgm_id']])
+    $sql->execute([$_GET['bgm_id']]);
         echo '<font color="red">削除に成功しました。</font>';
 
    
